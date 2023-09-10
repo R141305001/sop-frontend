@@ -2,13 +2,15 @@
 
     .container {
         max-width: 800px; /* Adjust the maximum width as needed */
+        
         margin: 0 auto; /* Center horizontally */
         padding: 20px;
     }
 
     .card {
         margin-bottom: 20px;
-        border: 2px 2px grey;
+        border: none;
+        transition: border 0.3s; /* Smooth transition for the border */
     }
 
     body {
@@ -70,6 +72,6 @@
 
     /* Reset the border when not hovering */
     .card {
-        transition: border 0.3s; /* Smooth transition for the border */
+        
         border: none; /* Default border style */
     }
