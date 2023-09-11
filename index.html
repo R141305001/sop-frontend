@@ -26,7 +26,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="email">Email:</label> <br>
+                        <label for="email">Email:</label> <br>https://sop-backend-d22r.onrender.com/add-response
                         <input type="email" class="form-control" id="email" name="Email" placeholder="Your Email" required>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                 <div class="card-body">
                     <div class="form-group">
                         <label for="education">Highest Education:</label></br>
-                        <select class=" w-25 dropdown mt-3 form-control">
+                        <select name="Heducation" class=" w-25 dropdown mt-3 form-control">
                             <option>Choose</option>
                             <option>Grade 12</option>
                             <option>Diploma</option>
@@ -242,6 +242,7 @@
                 </div>
             </div>
 
+            <div id="questions"></div>
             <div>
                 <button type="submit" class="btn btn-primary mt-4">Submit</button>
             </div>
@@ -272,7 +273,7 @@
             questionsDiv.appendChild(questionDiv);
         }
 
-        document.getElementById("userDataForm").addEventListener("submit", function (event) {
+        document.getElementById("applicationForm").addEventListener("submit", function (event) {
             event.preventDefault();
             // You can collect and handle form data here
             const formData = new FormData(this);
