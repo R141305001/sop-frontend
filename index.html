@@ -36,7 +36,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="fullName">Full Name:</label><br/>
+                        <label for="fullName">Full Name:</label></br>
                         <input type="text" class="form-control" class="lower-border mt-3" id="fullName" placeholder="Your Answer" name="FullName" required>
                     </div>
                 </div>
@@ -54,8 +54,8 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="education">Highest Education:</label> <br/>
-                        <select name="Heducation" class=" w-25 dropdown mt-3 form-control">
+                        <label for="education">Highest Education:</label></br>
+                        <select class=" w-25 dropdown mt-3 form-control">
                             <option>Choose</option>
                             <option>Grade 12</option>
                             <option>Diploma</option>
@@ -71,7 +71,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="studyField">Institute where you completed your highest level of education:</label><br/>
+                        <label for="studyField">Institute where you completed your highest level of education:</label></br>
                         <input type="text" class="lower-border mt-3  form-control" id="level" name="level" >
                     </div>
                 </div>
@@ -80,7 +80,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="studyField">What did you study:</label><br/>
+                        <label for="studyField">What did you study:</label></br>
                         <input type="text" class="lower-border mt-3  form-control" id="studyField" name="studyField" >
                     </div>
                 </div>
@@ -89,7 +89,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="completionPlace">Where You Completed Your Education:</label><br/>
+                        <label for="completionPlace">Where You Completed Your Education:</label></br>
                         <input type="text" class="lower-border mt-3  form-control" id="completionPlace" name="completionPlace" >
                     </div>
                 </div>
@@ -98,7 +98,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="experience">Do You Have Any Relevant Experience?</label><br/>
+                        <label for="experience">Do You Have Any Relevant Experience?</label><br>
                         Write None if no work experience. Provide the following details if yes:
                         1.Job Title </br>
                         2.Company Name </br>
@@ -115,7 +115,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="admitted">What institute did you get admitted to in Canada?</label><br/>
+                        <label for="admitted">What institute did you get admitted to in Canada?</label></br>
                         <input type="text" class="lower-border mt-3  form-control" id="admitted" name="admitted" placeholder="Your Answer" >
                     </div>
                 </div>
@@ -153,7 +153,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="listening">English Scores - Listening</label><br/>
+                        <label for="listening">English Scores - Listening</label></br>
                         <input type="text" class="lower-border mt-3  form-control" id="listening" name="listening" placeholder="Your Answer" >
                     </div>
                 </div>
@@ -181,7 +181,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="writing">English Scores - Writing</label><br/>
+                        <label for="writing">English Scores - Writing</label></br>
                         <input type="text" class="lower-border mt-3  form-control" id="writing" name="writing" placeholder="Your Answer" >
                     </div>
                 </div>
@@ -242,7 +242,6 @@
                 </div>
             </div>
 
-            <div id="questions"></div>
             <div>
                 <button type="submit" class="btn btn-primary mt-4">Submit</button>
             </div>
@@ -273,7 +272,7 @@
             questionsDiv.appendChild(questionDiv);
         }
 
-        document.getElementById("applicationForm").addEventListener("submit", function (event) {
+        document.getElementById("userDataForm").addEventListener("submit", function (event) {
             event.preventDefault();
             // You can collect and handle form data here
             const formData = new FormData(this);
@@ -284,5 +283,4 @@
     </script>
 </body>
 </html>
-
 
